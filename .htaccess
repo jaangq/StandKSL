@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule    ^pendaftaran\/?$    pendaftaran.php  [NC,L]
+RewriteRule    ^pendaftaran\/daftar$    etc/crud_pendaftaran.php  [NC,L]

@@ -1,0 +1,88 @@
+body {
+  background: #2BC0E4;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: linear-gradient(to right, #000, #2c3d50);
+  // background: linear-gradient(to right, #2c3d50, #405e80);
+  font-family: 'roboto';
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  .form-container {
+    $lrC: 300px;
+    $tbC: 100px;
+    $borderRadius: 10px;
+    margin: auto;
+    position: absolute;
+    left: $lrC;
+    right: $lrC;
+    // top: $tbC;
+    top: 55px;
+    bottom: $tbC;
+    background: #f3f3f3;
+    width: 766px;
+    // height: 485px;
+    // height: 500px;
+    height: 560px;
+    // border: 1px solid black;
+    border-radius: $borderRadius;
+    box-shadow: 1px 1px 10px #2c3d50, -1px -1px 10px #1b2d44;
+    .left-form {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-top-left-radius: $borderRadius;
+      border-bottom-left-radius: $borderRadius;
+    }
+    .right-form {
+      .title-right {
+        font-family: 'lobster';
+        color: #2e3057;
+      }
+      .container {
+        .form-group {
+          position: relative;
+        }
+        input, button {
+          padding: 10px;
+        }
+        select {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  footer {
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+    background-color: #2da2f1;
+    // color: #2e3057;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.img-container {
+  width: 150px;
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+}
+
+.img-container2 {
+  @extend .img-container;
+  bottom: unset;
+  left: unset;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+}
+
+.dot-container {
+  position: fixed;
+  margin: auto;
+  top: 40%;
+  right: 15px;
+}

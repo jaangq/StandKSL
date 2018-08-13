@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'lobster';
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #999;
+}
+.dot-dark {
+  @extend .dot;
+  background-color: #2c3d50;
+}
+.dot-dark:hover {
+  box-shadow: 2px 2px 5px #e6eef0, -2px -2px 5px #e6eef0;
+}
+.dot-light {
+  @extend .dot;
+  background-color: #e6eef0;
+}
+.dot-light:hover {
+  box-shadow: 2px 2px 5px #2c3d50, -2px -2px 5px #2c3d50;
+}
+.flash-message-container {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.valid-fa {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  display: none;
+}
+.fa-times {
+  @extend .valid-fa;
+  color: #721c24;
+}
+.fa-check {
+  @extend .valid-fa;
+  color: #004085;
+}

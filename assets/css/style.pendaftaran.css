@@ -1,0 +1,74 @@
+body {
+  background: #2BC0E4;
+  /* fallback for old browsers */
+  font-family: "roboto";
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+body .form-container {
+  margin: auto;
+  position: absolute;
+  left: 300px;
+  right: 300px;
+  top: 55px;
+  bottom: 100px;
+  background: #f3f3f3;
+  width: 766px;
+  height: 560px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #2c3d50, -1px -1px 10px #1b2d44;
+}
+body .form-container .left-form {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+body .form-container .right-form .title-right {
+  font-family: "lobster";
+  color: #2e3057;
+}
+body .form-container .right-form .container .form-group {
+  position: relative;
+}
+body .form-container .right-form .container input, body .form-container .right-form .container button {
+  padding: 10px;
+}
+body .form-container .right-form .container select {
+  cursor: pointer;
+}
+body footer {
+  position: absolute !important;
+  bottom: 0;
+  width: 100%;
+  background-color: #2da2f1;
+  color: #fff;
+  font-weight: bold;
+}
+
+.img-container, .img-container2 {
+  width: 150px;
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+}
+
+.img-container2 {
+  bottom: unset;
+  left: unset;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+}
+
+.dot-container {
+  position: fixed;
+  margin: auto;
+  top: 40%;
+  right: 15px;
+}
+
+/*# sourceMappingURL=style.pendaftaran.css.map */
